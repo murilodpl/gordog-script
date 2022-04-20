@@ -4,7 +4,7 @@ export default function Info() {
     return (
         <div className="container info">
             <h1>Informações Úteis:</h1>
-            <h2>Sempre confirme se o que foi processado está correto, pode acontecer de haver algum caractere ou simbolo diferente no meio do texto que acaba passando por despercebido do código. </h2>
+            <h2>Sempre confirme se o que foi processado está correto, pode acontecer de haver algum caractere diferente do normal no meio do texto que acaba passando por despercebido pelo código. <span>(Apenas uma olhada por cima basta)</span></h2>
 
             <div className='lista'>
                 <p>Como funciona o script?</p>
