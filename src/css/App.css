@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 1rem 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1250px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1250px) {
+  textarea {
+    width: 100% !important;
+  }
+}
+
+textarea {
+  width: 60%;
+  height: 350px;
+  border: 2px solid #fff;
+  transition: all ease-out 222ms;
+  margin-top: 1rem;
+  background: #282c34;
+  color: #fff;
+}
+
+textarea#input:hover {
+  border: 2px solid #ff5858;
+}
+
+textarea#input:focus {
+  outline: 0;
+  border: 2px solid #ff0000;
+}
+
+textarea#output {
+  border: 2px solid #ff6600;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
