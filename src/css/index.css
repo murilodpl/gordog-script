@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 96.6vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 1rem 0;
+  position: relative;
+}
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1250px;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btnPage {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnPage:hover {
+  transform: scale(1.1);
+}
+
+.btnPage span {
+  margin-top: .5rem;
+  color: #fff;
+  font-weight: 700;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+.btnPage:hover span{
+  color: #fb6161;
+}

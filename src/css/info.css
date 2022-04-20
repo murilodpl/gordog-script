@@ -1,0 +1,36 @@
+.info {
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    padding: 1rem;
+    color: rgb(204, 204, 204);
+}
+
+.lista {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fb6161;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+ul {
+    margin: 0;
+}
+
+p, li {
+    font-size: 1.25rem;
+    margin: .25rem;
+}
+
+span {
+    color: #fb6161;
+}

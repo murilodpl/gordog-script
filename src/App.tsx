@@ -1,34 +1,23 @@
 import { useState } from 'react'
-import './css/App.css'
+import Convert from './components/Convert'
+import Info from './components/Info';
+import svgInfo from './img/eye_question.svg'
 
 export default function App() {
-  const [data, setData] = useState({
-    input: '',
-    output: ''
-  })
+  const [isInfo, setIsInfo] = useState(false);
 
-  console.log(data)
-
-  function handleChange(e: any) {
-    const { value } = e.target
-
-    setData({
-      input: value,
-      output: ((value.replace(/(\r\n|\n|\r)/gm, "")).replace(/[ ](?=[^\]]*?(?:\[|$))/gm, "")).replace(/-/gm, "\n")
-    })
+  function handleClick() {
+    setIsInfo(prevIsInfo => !prevIsInfo)
   }
 
   return (
     <div className="App">
-      <div className="container">
-        <label htmlFor="input">Digita as coisa ai: 😎
-          <textarea name="input" id="input" value={data.input} onChange={handleChange}></textarea>
-        </label>
-        <br />
-        <label htmlFor="output">Toma: 😈
-          <textarea name="output" id="output" disabled value={data.output}></textarea>
-        </label>
-      </div>
+      {(!isInfo) ? <Convert /> : <Info />}
+
+      <button className='btnPage' onClick={handleClick} aria-label="Botão para mudar de página">
+        <img width="60px" height="60px" src={svgInfo} alt="Imagem de olho" />
+        <span>Infos</span>
+      </button>
     </div>
   )
 }
