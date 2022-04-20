@@ -14,7 +14,7 @@ export default function App() {
 
     setData({
       input: value,
-      output: (value.replace(/(\r\n|\n|\r|\s)/gm, "")).replace(/-/gm, "\n")
+      output: ((value.replace(/(\r\n|\n|\r)/gm, "")).replace(/[ ](?=[^\]]*?(?:\[|$))/gm, "")).replace(/-/gm, "\n")
     })
   }
 
