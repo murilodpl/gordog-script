@@ -12,7 +12,7 @@ export default function Info() {
                     <li>Remove todos os espaços;</li>
                     <li>Remove todos as quebras de linhas;
                         <ul>
-                            <li>Todos os espaços dentro de um colchetes [] vão ser preservados.</li>
+                            <li>Todos os espaços dentro de um <span>[ ] (Colchetes)</span> vão ser preservados.</li>
                         </ul>
                     </li>
                     <li>Substitui o caractere <span>- (Hífen)</span> por uma quebra de linha.</li>
