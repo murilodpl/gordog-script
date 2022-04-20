@@ -1,6 +1,4 @@
 # Gordog Script
-<img src="/public_img.png"/>
-
 ## O que é?
 Um simples script para transformar o input em um output com um padrão unico:
 - Remove todos os espaço e quebras de linha;
@@ -8,3 +6,5 @@ Um simples script para transformar o input em um output com um padrão unico:
 ---
 ## Por que?
 Para facilizar o serviço de um colegar de serviço. 🙂
+
+<img src="/public_img.png"/>
