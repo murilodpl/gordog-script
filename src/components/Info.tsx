@@ -9,8 +9,8 @@ export default function Info() {
             <div className='lista'>
                 <p>Como funciona o script?</p>
                 <ul>
-                    <li>Remove todos os espaços;</li>
-                    <li>Remove todos as quebras de linhas;
+                    <li>Remove todos as quebras de linhas;</li>
+                    <li>Remove todos os espaços;
                         <ul>
                             <li>Todos os espaços dentro de um <span>[ ] (Colchetes)</span> vão ser preservados.</li>
                         </ul>
