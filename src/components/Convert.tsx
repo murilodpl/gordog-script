@@ -16,6 +16,13 @@ export default function Convert() {
         })
     }
 
+    function clearFields() {
+        setData({
+            input: '',
+            output: ''
+        }) 
+    }
+
     return (
         <div className="container containerC">
             <label htmlFor="input">Digita as coisa ai: 😎
@@ -25,6 +32,8 @@ export default function Convert() {
             <label htmlFor="output">Toma: 😈
                 <textarea name="output" id="output" disabled value={data.output}></textarea>
             </label>
+
+            <button className='btnClear' onClick={clearFields} aria-label="Botão para mudar de página">Limpar campos</button>
         </div>
     )
 }

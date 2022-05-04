@@ -37,3 +37,21 @@ label {
     justify-content: center;
     align-items: center;
 }
+
+.btnClear {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(128, 0, 0);
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all 333ms ease;
+    margin-top: 1rem;
+}
+
+.btnClear:hover {
+    background: rgb(255, 255, 255);;
+    border-color: rgb(128, 0, 0);
+    color: rgb(128, 0, 0);
+}
