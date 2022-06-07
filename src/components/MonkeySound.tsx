@@ -9,7 +9,7 @@ export default function MonkeySound() {
 
     return (
         <>
-            <button className="btnPageMonkey" type="button" onMouseEnter={playSound}>
+            <button className="btnPageMonkey" type="button" onClick={playSound}>
                 <img width="48px" height="48px" src={monkeySvg} alt="Icone de macaco" />
             </button>
 
