@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Convert from './components/Convert'
 import Info from './components/Info';
+import MonkeySound from './components/MonkeySound';
 import svgInfoEye from './img/eye_question.svg'
 import svgInfoPaper from './img/paper.svg'
 
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <MonkeySound />
       {(!isInfo) ? <Convert /> : <Info />}
 
       <button className='btnPage' onClick={handleClick} aria-label="Botão para mudar de página">

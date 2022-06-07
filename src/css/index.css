@@ -73,3 +73,24 @@ code {
 .btnPage:hover span{
   color: #fb6161;
 }
+
+.btnPageMonkey {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnPageMonkey:hover {
+  transform: scale(1.1);
+}
