@@ -70,7 +70,7 @@ code {
   transition-duration: .15s;
 }
 
-.btnPage:hover span{
+.btnPage:hover span {
   color: #fb6161;
 }
 
@@ -93,4 +93,24 @@ code {
 
 .btnPageMonkey:hover {
   transform: scale(1.1);
+}
+
+button#escapeBtn {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background: #454c5a;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: all 333ms ease;
+  margin-top: 1rem;
+}
+
+button#escapeBtn:hover {
+  background: rgb(255, 255, 255);
+  border-color: #454c5a;
+  color: #454c5a;
 }
