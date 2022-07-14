@@ -20,7 +20,11 @@ export default function Convert() {
         setData({
             input: '',
             output: ''
-        }) 
+        })
+    }
+
+    function copyField() {
+        navigator.clipboard.writeText(data.output);
     }
 
     return (
@@ -33,7 +37,10 @@ export default function Convert() {
                 <textarea name="output" id="output" disabled value={data.output}></textarea>
             </label>
 
-            <button className='btnClear' onClick={clearFields} aria-label="Botão para mudar de página">Limpar campos</button>
+            <div className='btnDiv'>
+                <button className='btnCopy' onClick={copyField} aria-label="Botão para mudar de página">Copiar texto</button>
+                <button className='btnClear' onClick={clearFields} aria-label="Botão para mudar de página">Limpar campos</button>
+            </div>
         </div>
     )
 }
