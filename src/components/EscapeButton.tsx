@@ -7,10 +7,11 @@ export default function EscapeButton() {
         var randX = Math.floor(Math.random() * (window.innerWidth - 100));
         var randY = Math.floor(Math.random() * (window.innerHeight - 100));
         console.log([randX, randY]);
-        e.stop().animate({ "left": randX + "px", "top": randY + "px" });
+        e.target.style.top = randY + "px";
+        e.target.style.left = randX + "px";
     }
 
     return (
-        <button id="escapeBtn" onClick={() => alert('clicked!')} onMouseEnter={foo}>Me clica</button>
+        <button id="escapeBtn" onClick={() => alert('Parabéns trouxa!')} onMouseEnter={foo}>Me clica</button>
     )
 }

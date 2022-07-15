@@ -96,7 +96,9 @@ code {
 }
 
 button#escapeBtn {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
   font-size: 16px;
   font-weight: 700;
@@ -107,6 +109,7 @@ button#escapeBtn {
   cursor: pointer;
   transition: all 333ms ease;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 button#escapeBtn:hover {
