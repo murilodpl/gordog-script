@@ -1,4 +1,4 @@
-export default function EscapeButton() {
+export default function EscapeButton(props: any) {
     // https://jsfiddle.net/trusktr/CmAuZ/
 
     var caller = document.getElementById("escapeBtn");
@@ -12,6 +12,6 @@ export default function EscapeButton() {
     }
 
     return (
-        <button id="escapeBtn" onClick={() => alert('Parabéns trouxa!')} onMouseEnter={foo}>Me clica</button>
+        <button id="escapeBtn" onClick={() => props.handle()} onMouseEnter={foo}>Me clica</button>
     )
 }
