@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Convert from './components/Convert'
+import EscapeButton from './components/EscapeButton';
 import Info from './components/Info';
 import MonkeySound from './components/MonkeySound';
 import svgInfoEye from './img/eye_question.svg'
@@ -21,6 +22,8 @@ export default function App() {
         <img width="60px" height="60px" src={(!isInfo) ? svgInfoEye : svgInfoPaper} alt={(!isInfo) ? "Imagem de olho" : "Imagem de papel"} />
         <span>{(!isInfo) ? "Infos" : "Voltar"}</span>
       </button>
+
+      <EscapeButton />
     </div>
   )
 }
