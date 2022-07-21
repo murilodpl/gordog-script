@@ -38,6 +38,7 @@ code {
 .container {
   margin-right: auto;
   margin-left: auto;
+  z-index: 1;
 }
 
 .btnPage {
@@ -139,4 +140,12 @@ button#escapeBtn:hover {
     -28px 28px #eeff41,
     -32px 32px #f9a825,
     -36px 36px #ff5722;
+}
+
+.monkey {
+  position: absolute;
+  white-space: pre-wrap;
+  transform: scale(.125);
+  z-index: 0;
+  color: #2f343c45;
 }

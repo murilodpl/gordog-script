@@ -14,7 +14,7 @@ textarea {
     border: 2px solid #fff;
     transition: all ease-out 222ms;
     margin-top: 1rem;
-    background: #282c34;
+    background: transparent;
     color: #fff;
 }
 

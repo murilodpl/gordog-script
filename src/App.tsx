@@ -3,6 +3,7 @@ import Convert from './components/Convert'
 import EscapeButton from './components/EscapeButton';
 import Info from './components/Info';
 import MonkeySound from './components/MonkeySound';
+import MonkeyTextArt from './components/MonkeyTextArt';
 import Parabens from './components/Parabens';
 import svgInfoEye from './img/eye_question.svg'
 import svgInfoPaper from './img/paper.svg'
@@ -32,6 +33,8 @@ export default function App() {
       </button>
 
       {(!isTroll) && <EscapeButton handle={handleClickTroll} />}
+
+      <MonkeyTextArt />
     </div>
   )
 }
