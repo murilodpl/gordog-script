@@ -142,10 +142,6 @@ button#escapeBtn:hover {
     -36px 36px #ff5722;
 }
 
-.monkey {
-  position: absolute;
-  white-space: pre-wrap;
-  transform: scale(.125);
-  z-index: 0;
-  color: #2f343c45;
+.w-full {
+  width: 100%;
 }

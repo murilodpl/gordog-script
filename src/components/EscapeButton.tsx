@@ -1,6 +1,8 @@
-export default function EscapeButton(props: any) {
+import { useNavigate } from 'react-router-dom';
+export default function EscapeButton() {
     // https://jsfiddle.net/trusktr/CmAuZ/
 
+    const navigate = useNavigate();
     var caller = document.getElementById("escapeBtn");
 
     function foo(e: any) {
@@ -12,6 +14,6 @@ export default function EscapeButton(props: any) {
     }
 
     return (
-        <button id="escapeBtn" onClick={() => props.handle()} onMouseEnter={foo}>Me clica</button>
+        <button id="escapeBtn" onClick={() => navigate('/parabens')} onMouseEnter={foo}>Me clica</button>
     )
 }
