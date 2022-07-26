@@ -7,7 +7,7 @@ export default function ConvertPaises() {
         output: ''
     })
     const [country, setCountry] = useState('SP')
-    const reg = new RegExp(`^((?!\(${country}\)).)*$`, "gm");
+    const reg = new RegExp(`^((?!\(${country}\)).)*$`, "gms");
 
     function handleChange(e: any) {
         const { value} = e.target
