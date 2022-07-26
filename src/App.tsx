@@ -1,4 +1,5 @@
 import Home from './pages/Home';
+import Paises from './pages/Paises';
 import Info from './pages/Info';
 import Parabens from './pages/Parabens';
 
@@ -10,15 +11,18 @@ export default function App() {
     <div className="App">
       <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/parabens" element={<Parabens />} />
-        <Route
-          path="*"
-          element={<Navigate to="/" />}
-        />
-      </Routes>
+      <div className="All">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/paises" element={<Paises />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/parabens" element={<Parabens />} />
+          <Route
+            path="*"
+            element={<Navigate to="/" />}
+          />
+        </Routes>
+      </div>
     </div>
   )
 }
