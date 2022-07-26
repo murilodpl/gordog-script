@@ -12,7 +12,7 @@ export default function Header() {
                         <NavLink to="/" className="navItem" >Converter</NavLink>
                     </li>
                     <li>
-                        <NavLink to="paises" className="navItem" >Países</NavLink>
+                        <NavLink to="estados" className="navItem" >Estados</NavLink>
                     </li>
                     <li>
                         <NavLink to="Info" className="navItem">Info</NavLink>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../css/convert.css'
 
-export default function ConvertPaises() {
+export default function ConvertEstados() {
     const [data, setData] = useState({
         input: '',
         output: ''
@@ -43,11 +43,11 @@ export default function ConvertPaises() {
     return (
         <div className="container containerC">
             <div className="countryDiv">
-                <label htmlFor="country">Escolha um país:</label>
+                <label htmlFor="country">Escolha um estado:</label>
                 <input className="w-full" type="text" id="country" onChange={handleChangeCountry} value={country} name="country" />
             </div>
 
-            <label htmlFor="input">Converter países: 🌏
+            <label htmlFor="input">Converter estados: 🌏
                 <textarea name="input" id="input" value={data.input} onChange={handleChange}></textarea>
             </label>
             <br />
