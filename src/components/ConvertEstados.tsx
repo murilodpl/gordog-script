@@ -48,7 +48,7 @@ export default function ConvertEstados() {
                 </label>
             </div>
 
-            <label htmlFor="input">Converter estados: 🌏
+            <label htmlFor="input"><div>Converter estados: <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil" target="_blank" rel="noopenner">🌏</a></div>
                 <textarea name="input" id="input" value={data.input} onChange={handleChange}></textarea>
             </label>
             <br />
