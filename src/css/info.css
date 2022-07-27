@@ -7,6 +7,9 @@
 .lista {
     text-align: left;
 }
+.lista.mt {
+    margin-top: 2rem;
+}
 
 h1 {
     font-size: 2rem;

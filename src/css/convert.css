@@ -9,7 +9,7 @@
 }
 
 textarea {
-    width: 60%;
+    width: 80%;
     height: 350px;
     border: 2px solid #fff;
     transition: all ease-out 222ms;
@@ -87,6 +87,12 @@ label {
     border-color: rgb(0, 128, 0);
     color: rgb(0, 128, 0);
 }
+.countryDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .countryDiv label {
     font-size: 1.5rem;
@@ -98,4 +104,6 @@ label {
     border: 2px solid #6958ff;
     margin: 1rem 0 2rem;
     padding: .5rem;
+    width: 60%;
+    text-align: center;
 }

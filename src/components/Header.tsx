@@ -9,10 +9,10 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/" className="navItem" >Converter</NavLink>
+                        <NavLink to="/" className="navItem">Converter</NavLink>
                     </li>
                     <li>
-                        <NavLink to="estados" className="navItem" >Estados</NavLink>
+                        <NavLink to="estados" className="navItem">Estados</NavLink>
                     </li>
                     <li>
                         <NavLink to="Info" className="navItem">Info</NavLink>
