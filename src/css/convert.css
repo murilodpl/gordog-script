@@ -5,7 +5,27 @@
 @media (min-width: 1250px) {
     textarea {
         width: 100% !important;
+        height: 500px !important;
     }
+
+    .divTextArea {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .divTextArea label {
+        width: 100%;
+    }
+
+    .divTextArea span {
+        white-space: pre;
+        display: block !important;
+    }
+}
+
+.divTextArea span {
+    display: none;
 }
 
 textarea {
@@ -13,7 +33,7 @@ textarea {
     height: 350px;
     border: 2px solid #fff;
     transition: all ease-out 222ms;
-    margin-top: 1rem;
+    margin: 1rem 0;
     background: transparent;
     color: #fff;
 }
@@ -91,6 +111,7 @@ label {
     border-color: rgb(0, 128, 0);
     color: rgb(0, 128, 0);
 }
+
 .countryDiv {
     display: flex;
     flex-direction: column;
@@ -101,6 +122,7 @@ label {
 .countryDiv label {
     font-size: 1.5rem;
 }
+
 .countryDiv input {
     font-size: 1.5rem;
     background: transparent;
