@@ -15,6 +15,9 @@ export default function Header() {
                         <NavLink to="estados" className="navItem">Estados</NavLink>
                     </li>
                     <li>
+                        <NavLink to="aspas" className="navItem">Aspas</NavLink>
+                    </li>
+                    <li>
                         <NavLink to="Info" className="navItem">Info</NavLink>
                     </li>
                 </ul>

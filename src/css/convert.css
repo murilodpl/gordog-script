@@ -50,6 +50,10 @@ label {
         flex-direction: column;
         gap: 0;
     }
+
+    .aspasDiv {
+        flex-direction: column;
+    }
 }
 
 .btnClear {
@@ -106,4 +110,23 @@ label {
     padding: .5rem;
     width: 60%;
     text-align: center;
+}
+
+.aspasDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.aspasDiv label {
+    flex-direction: row;
+    gap: .5rem;
+    font-size: 1.25rem;
+    color: #9285ff;
+}
+
+.aspasDiv input[type='radio'] {
+    accent-color: #6958ff;
 }

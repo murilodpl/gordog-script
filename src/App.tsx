@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import Estados from './pages/Estados';
+import Aspas from './pages/Aspas';
 import Info from './pages/Info';
 import Parabens from './pages/Parabens';
 
@@ -15,6 +16,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/estados" element={<Estados />} />
+          <Route path="/aspas" element={<Aspas />} />
           <Route path="/info" element={<Info />} />
           <Route path="/parabens" element={<Parabens />} />
           <Route
