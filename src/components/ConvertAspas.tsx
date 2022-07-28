@@ -60,7 +60,7 @@ export default function ConvertAspas() {
                 <textarea name="input" id="input" value={data.input} onChange={handleChange}></textarea>
             </label>
             <br />
-            <label htmlFor="output">Assuma: 🎩
+            <label htmlFor="output">Ta na mão: 🖐
                 <textarea name="output" id="output" disabled value={data.output}></textarea>
             </label>
 
