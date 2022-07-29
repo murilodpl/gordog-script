@@ -1,5 +1,3 @@
-import '../css/info.css'
-
 export default function Info() {
     return (
         <div className="container info">
@@ -19,7 +17,7 @@ export default function Info() {
                 </ul>
             </div>
 
-            <div className='lista mt'>
+            <div className='lista'>
                 <p>Como funciona o script de estados?</p>
                 <ul>
                     <li>Remove todos as linhas vazias;</li>
@@ -27,7 +25,7 @@ export default function Info() {
                 </ul>
             </div>
 
-            <div className='lista mt'>
+            <div className='lista'>
                 <p>Como funciona o script de aspas?</p>
                 <ul>
                     <li>Possui duas opções de funcionamento:

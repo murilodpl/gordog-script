@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-secondary m-0 text-center min-h-screen text-white pb-8;
+    font-size: calc(10px + 2vmin);
+}
+
+/* HEADER */
+header {
+    @apply w-full;
+}
+
+nav {
+    @apply w-full bg-primary;
+}
+
+nav ul {
+    @apply flex justify-center items-center list-none p-4 border-b border-white;
+}
+
+nav .navItem {
+    @apply text-white text-base no-underline transition-all mx-3 hover:text-g_red focus:text-g_red;
+}
+nav .active {
+    @apply text-g_red;
+}
+
+/* BUTTONS */
+.btnPageMonkey {
+    @apply fixed right-0 top-16 sm:top-0 m-2 bg-transparent border-0 cursor-pointer transition-all flex flex-col items-center hover:scale-110;
+}
+
+#escapeBtn {
+    @apply hidden sm:block absolute top-0 left-0 z-[2] text-base font-bold text-white bg-[#454c5a] border border-transparent py-2 px-4 cursor-pointer transition-all ease-in duration-500 mt-4 ml-4 hover:bg-white hover:text-[#454c5a] hover:border-[#454c5a];
+}
+
+.btnDiv {
+    @apply flex flex-col justify-center items-center sm:gap-4 sm:flex-row;
+}
+
+.btnClear,
+.btnCopy {
+    @apply text-base font-bold text-white border border-transparent px-4 py-2 cursor-pointer transition-all mt-4 hover:bg-white;
+}
+
+.btnClear {
+    @apply bg-[#800000] hover:border-[#800000] hover:text-[#800000];
+}
+
+.btnCopy {
+    @apply bg-[#008000] hover:border-[#008000] hover:text-[#008000];
+}
+
+/* CONVERT */
+.divTextArea {
+    @apply flex flex-col lg:flex-row gap-8 items-center;
+}
+
+.divTextArea label {
+    @apply w-full;
+}
+
+.divTextArea span {
+    display: none;
+    @apply whitespace-pre hidden lg:block;
+}
+
+textarea {
+    @apply w-4/5 lg:w-full h-[21.875rem] lg:h-[31.25rem] border-2 border-white transition-all my-4 bg-transparent text-white focus:ring-0 focus:outline-0;
+}
+
+textarea#input {
+    @apply hover:border-g_red focus:border-[#ff0000];
+}
+
+textarea#output {
+    @apply border-[#ff6600];
+}
+
+label,
+.countryDiv {
+    @apply flex flex-col justify-center items-center;
+}
+
+.countryDiv label {
+    @apply text-2xl;
+}
+
+.countryDiv input {
+    @apply text-2xl text-white text-center w-3/5 bg-transparent border-2 border-[#6958ff] focus:ring-0 focus:outline-0 focus:border-[#5745fa] transition-all mt-4 mb-8 p-2;
+}
+
+.aspasDiv {
+    @apply flex flex-col lg:flex-row items-center justify-center mb-4 gap-4;
+}
+
+.aspasDiv label {
+    @apply text-xl text-[#6958ff] flex-row gap-2;
+}
+
+.aspasDiv input[type='radio'] {
+    @apply text-[#6958ff] focus:ring-0 focus:outline-0;
+}
+
+/* INFO */
+.info {
+    @apply  border border-[#989a9e] p-4 text-[#ccc];
+}
+
+.lista {
+    @apply text-left mt-8 first:mt-0;
+}
+
+.info h1 {
+    @apply text-2xl lg:text-[2rem] text-g_red font-bold;
+}
+
+.info h2 {
+    @apply text-xl lg:text-2xl font-medium mb-4 pb-4 border-b border-[#ffffff85];
+}
+
+.info ul {
+    @apply m-0 list-disc;
+}
+
+.info p,
+.info li {
+    @apply text-base lg:text-xl;
+}
+
+.info li {
+    @apply ml-8 lg:ml-12;
+}
+
+.info span {
+    @apply text-g_red;
+}
+
+.rainbow-letters {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+        -8px 8px #f48fb1,
+        -12px 12px #7e57c2,
+        -16px 16px #2196f3,
+        -20px 20px #26c6da,
+        -24px 24px #43a047,
+        -28px 28px #eeff41,
+        -32px 32px #f9a825,
+        -36px 36px #ff5722;
+}

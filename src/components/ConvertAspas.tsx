@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../css/convert.css'
 
 export default function ConvertAspas() {
     const [data, setData] = useState({
@@ -43,7 +42,7 @@ export default function ConvertAspas() {
     }
 
     return (
-        <div className="container containerC">
+        <div className="container">
             <div className="aspasDiv">
                 <label htmlFor="adicionar">
                     <input type="radio" id="adicionar" name="regAspas" value="adicionar" onChange={handleChangeRadio} checked={isAddAspas === 'adicionar'} />

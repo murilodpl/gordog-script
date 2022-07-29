@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../css/convert.css'
 
 export default function ConvertEstados() {
     const [data, setData] = useState({
@@ -41,7 +40,7 @@ export default function ConvertEstados() {
     }
 
     return (
-        <div className="container containerC">
+        <div className="container">
             <div className="countryDiv">
                 <label htmlFor="country">Escolha um estado:
                     <input className="w-full" type="text" id="country" onChange={handleChangeCountry} value={country} name="country" />

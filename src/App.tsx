@@ -9,10 +9,10 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
 
-      <div className="All">
+      <div className="relative mt-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/estados" element={<Estados />} />

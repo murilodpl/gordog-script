@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../css/convert.css'
 
 export default function Convert() {
     const [data, setData] = useState({
@@ -28,7 +27,7 @@ export default function Convert() {
     }
 
     return (
-        <div className="container containerC">
+        <div className="container">
             <div className="divTextArea">
                 <label htmlFor="input">Digita as coisa ai: 😎
                     <textarea name="input" id="input" value={data.input} onChange={handleChange}></textarea>

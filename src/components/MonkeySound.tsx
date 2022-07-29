@@ -1,5 +1,5 @@
-import monkeySvg from '../img/monkey.svg'
-import monkeySound from '../img/msound.mp3'
+import monkeySvg from '../assets/img/monkey.svg'
+import monkeySound from '../assets/img/msound.mp3'
 
 export default function MonkeySound() {
     function playSound() {
