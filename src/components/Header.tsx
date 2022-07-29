@@ -15,12 +15,12 @@ export default function Header() {
         <header>
 
             <nav>
-                <div className="container flex flex-wrap justify-between items-center mx-auto">
+                <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <div className="flex py-2">
                         <MonkeySound />
                     </div>
 
-                    <div className="md:hidden flex items-center">
+                    <div className="flex items-center lg:hidden">
                         <button className="outline-none menu-button" aria-label="Open mobile menu" onClick={menuBtnClick}>
                             <svg className="w-6 h-6 text-gray-500" x-show="! showMenu" fill="none" viewBox="0 00 24 24" stroke="currentColor">
                                 <path d="m4 6h16M4 12h16M4 18h16"></path>
@@ -28,8 +28,8 @@ export default function Header() {
                         </button>
                     </div>
 
-                    <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                        <ul className="flex flex-col mt-4 md:flex-row md:space-x-6 md:mt-0 md:text-sm">
+                    <div className="hidden w-full lg:block lg:w-auto" id="mobile-menu">
+                        <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-6 lg:mt-0 lg:text-sm">
                             <li>
                                 <NavLink to="/" className="navItem">Converter</NavLink>
                             </li>
@@ -40,7 +40,10 @@ export default function Header() {
                                 <NavLink to="aspas" className="navItem">Aspas</NavLink>
                             </li>
                             <li>
-                                <NavLink to="contador" className="navItem">Contador</NavLink>
+                                <NavLink to="contador-letras" className="navItem">Contador de Letras</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="contador-palavras" className="navItem">Contador de Palavras</NavLink>
                             </li>
                             <li>
                                 <NavLink to="Info" className="navItem">Info</NavLink>
@@ -49,7 +52,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className={`${(!mobileMenuShow) && "hidden"} md:hidden border border-g_red rounded`}>
+                <div className={`${(!mobileMenuShow) && "hidden"} lg:hidden border border-g_red rounded`}>
                     <ul>
                         <li>
                             <NavLink to="/" className="navItem" onClick={menuBtnClick}>Converter</NavLink>
