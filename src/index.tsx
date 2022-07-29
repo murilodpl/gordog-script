@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import './assets/css/style.min.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename="https://gordog-script.vercel.app/">
+  <BrowserRouter basename="https://gordog-script.vercel.app">
   {/* <BrowserRouter> */}
     <App />
   </BrowserRouter>
