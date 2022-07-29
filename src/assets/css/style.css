@@ -9,15 +9,11 @@ body {
 
 /* HEADER */
 header {
-    @apply w-full;
+    @apply w-full shadow-md;
 }
 
 nav {
     @apply w-full bg-primary;
-}
-
-nav ul {
-    @apply flex justify-center items-center list-none p-4 border-b border-white;
 }
 
 nav .navItem {
@@ -28,10 +24,6 @@ nav .active {
 }
 
 /* BUTTONS */
-.btnPageMonkey {
-    @apply fixed right-0 top-16 sm:top-0 m-2 bg-transparent border-0 cursor-pointer transition-all flex flex-col items-center hover:scale-110;
-}
-
 #escapeBtn {
     @apply hidden sm:block absolute top-0 left-0 z-[2] text-base font-bold text-white bg-[#454c5a] border border-transparent py-2 px-4 cursor-pointer transition-all ease-in duration-500 mt-4 ml-4 hover:bg-white hover:text-[#454c5a] hover:border-[#454c5a];
 }
