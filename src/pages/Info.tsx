@@ -26,6 +26,18 @@ export default function Info() {
                     <li>Caso você selecione o estado de <span>SP</span>, o script vai manter todas as linhas que possuirem <span>(SP)</span> e remover todo o resto.</li>
                 </ul>
             </div>
+
+            <div className='lista mt'>
+                <p>Como funciona o script de aspas?</p>
+                <ul>
+                    <li>Possui duas opções de funcionamento:
+                        <ul>
+                            <li><span>Adicionar aspas:</span> adiciona aspas duplas no inicio e no fim de todas as linhas;</li>
+                            <li><span>Remover aspas:</span> remove todas as aspas duplas do texto.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
