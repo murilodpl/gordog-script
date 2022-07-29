@@ -80,16 +80,22 @@ textarea#output {
 }
 
 label,
-.countryDiv {
+.countryDiv,
+.contadorDiv {
     @apply flex flex-col justify-center items-center;
 }
 
-.countryDiv label {
+.countryDiv label,
+.contadorDiv label {
     @apply text-2xl;
 }
 
 .countryDiv input {
-    @apply text-2xl text-white text-center w-3/5 bg-transparent border-2 border-[#6958ff] focus:ring-0 focus:outline-0 focus:border-[#5745fa] transition-all mt-4 mb-8 p-2;
+    @apply text-2xl text-center w-3/5 bg-transparent border-2 border-[#6958ff] focus:ring-0 focus:outline-0 focus:border-[#5745fa] transition-all mt-4 mb-8 p-2;
+}
+
+.contadorDiv input {
+    @apply text-xl lg:text-3xl font-bold w-full text-center bg-[#6958ff] border-0 mt-4 mb-8 py-4;
 }
 
 .aspasDiv {

@@ -43,7 +43,7 @@ export default function ConvertEstados() {
         <div className="container">
             <div className="countryDiv">
                 <label htmlFor="country">Escolha um estado:
-                    <input className="w-full" type="text" id="country" onChange={handleChangeCountry} value={country} name="country" />
+                    <input type="text" id="country" onChange={handleChangeCountry} value={country} name="country" />
                 </label>
             </div>
 
