@@ -1,4 +1,3 @@
-import favIcon from "../assets/img/favicon.svg"
 import MonkeySound from '../components/MonkeySound';
 
 import { NavLink } from "react-router-dom";
@@ -13,7 +12,6 @@ export default function Header() {
 
     return (
         <header>
-
             <nav>
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <div className="flex py-2">

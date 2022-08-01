@@ -8,18 +8,31 @@ export default function ContadorPalavras() {
 
     function handleChange(e: any) {
         const { value } = e.target
-        let reg: any = new RegExp(`"|{|}`, "g");
-        let reg2: any = new RegExp(`,`, "g");
-
         const counts: any = {};
-        const arrValue = value.split(/\n| /);
+        let reg: any = new RegExp(`[{}\[]|(\]\])`, "gm");
+        let reg2: any = new RegExp(`],`, "g");
+
+        let arrValue = value.replace(/[-._!"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+/gm, "").toLowerCase().split(/\n| /);
         arrValue.forEach(function (x: any) { counts[x] = (counts[x] || 0) + 1; });
 
-        // {"Teste":2,"teste":1}
+        let sortedList = []
+        //Sorting by values asc
+        sortedList = Object.entries(counts).sort((a: any, b: any) => {
+            if (b[1] > a[1]) return 1;
+            else if (b[1] < a[1]) return -1;
+            //if values are same do edition checking if keys are in the right order
+            else {
+                if (a[0] > b[0]) return 1;
+                else if (a[0] < b[0]) return -1;
+                else return 0
+            }
+        })
 
+        // {"Teste":2,"teste":1}
+        // [["Teste",2],[teste",1]]
         setData({
             input: value,
-            output: JSON.stringify(counts).replace(reg, "").replace(reg2, "\n")
+            output: JSON.stringify(sortedList).replace(reg, "").replace(reg2, "\n")
         })
     }
 
