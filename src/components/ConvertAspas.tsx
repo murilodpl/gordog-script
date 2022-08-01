@@ -9,12 +9,20 @@ export default function ConvertAspas() {
 
     function handleChange(e: any) {
         const { value } = e.target
-        let reg: any = (isAddAspas === 'adicionar') ? new RegExp(`(\n)+`, "gm") : new RegExp(`"+`, "g");
 
-        setData({
-            input: value,
-            output: (isAddAspas === 'adicionar') ? ('"' + value.replace(reg, `"\n"`) + '"') : value.replace(reg, "")
-        })
+        if (value != "") {
+            let reg: any = (isAddAspas === 'adicionar') ? new RegExp(`(\n)+`, "gm") : new RegExp(`"+`, "g");
+
+            setData({
+                input: value,
+                output: (isAddAspas === 'adicionar') ? ('"' + value.replace(reg, `"\n"`) + '"') : value.replace(reg, "")
+            })
+        } else {
+            setData({
+                input: '',
+                output: ''
+            })
+        }
     }
 
     function handleChangeRadio(e: any) {

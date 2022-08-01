@@ -36,6 +36,21 @@ export default function Info() {
                     </li>
                 </ul>
             </div>
+
+            <div className='lista'>
+                <p>Como funciona o contador de letras?</p>
+                <ul>
+                    <li>Conta todas os caracteres, incluindo quebra de linha e espaços.</li>
+                </ul>
+            </div>
+
+            <div className='lista'>
+                <p>Como funciona o contador de palavras?</p>
+                <ul>
+                    <li>Conta todas as palavras repetidas;</li>
+                    <li>Mostra o total de palavras que existe no texto.</li>
+                </ul>
+            </div>
         </div>
     )
 }
