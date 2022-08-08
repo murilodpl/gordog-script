@@ -35,6 +35,17 @@ export default function ConvertEstados() {
         setCountry('SP')
     }
 
+    function downloadTxtFile() {
+        const element = document.createElement("a");
+        const file = new Blob([data.output], {
+            type: "text/plain"
+        });
+        element.href = URL.createObjectURL(file);
+        element.download = "convertEstados.txt";
+        document.body.appendChild(element);
+        element.click();
+    }
+
     function copyField() {
         navigator.clipboard.writeText(data.output);
     }
@@ -62,6 +73,7 @@ export default function ConvertEstados() {
             <div className='btnDiv'>
                 <button className='btnCopy' onClick={copyField} aria-label="Botão para mudar de página">Copiar texto</button>
                 <button className='btnClear' onClick={clearFields} aria-label="Botão para mudar de página">Limpar campos</button>
+                <button className='btnDownload' onClick={downloadTxtFile} aria-label="Botão para baixar texto em arquivo">Baixar .txt</button>
             </div>
         </div>
     )
