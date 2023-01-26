@@ -64,6 +64,10 @@ nav .active {
     @apply hidden whitespace-pre lg:block;
 }
 
+select, option {
+    @apply bg-primary;
+}
+
 textarea {
     @apply w-4/5 lg:w-full h-[21.875rem] lg:h-[31.25rem] border-2 border-white transition-all my-4 bg-transparent text-white focus:ring-0 focus:outline-0;
 }

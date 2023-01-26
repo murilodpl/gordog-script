@@ -32,6 +32,9 @@ export default function Header() {
                                 <NavLink to="/" className="navItem">Converter</NavLink>
                             </li>
                             <li>
+                                <NavLink to="conversor-cases" className="navItem">Converter Cases</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="estados" className="navItem">Estados</NavLink>
                             </li>
                             <li>
@@ -54,6 +57,9 @@ export default function Header() {
                     <ul>
                         <li>
                             <NavLink to="/" className="navItem" onClick={menuBtnClick}>Converter</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="conversor-cases" className="navItem" onClick={menuBtnClick}>Converter Cases</NavLink>
                         </li>
                         <li>
                             <NavLink to="estados" className="navItem" onClick={menuBtnClick}>Estados</NavLink>
