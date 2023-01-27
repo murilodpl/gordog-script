@@ -10,9 +10,9 @@ export default function Aspas() {
     useEffect(() => {
         toast.info('*Se quiser analisar o mesmo texto, copie ele antes de trocar entre letras/palavras e cole-o novamente!', {
             position: "bottom-right",
-            autoClose: 4000,
-            hideProgressBar: false,
-            closeOnClick: true,
+            autoClose: false,
+            hideProgressBar: true,
+            closeOnClick: false,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
