@@ -34,7 +34,8 @@ nav .active {
 
 .btnClear,
 .btnCopy,
-.btnDownload {
+.btnDownload,
+.btnPurple {
     @apply px-4 py-2 mt-4 text-base font-bold text-white transition-all border border-transparent cursor-pointer hover:bg-white;
 }
 
@@ -48,6 +49,10 @@ nav .active {
 
 .btnDownload {
     @apply bg-[#001e80] hover:border-[#001e80] hover:text-[#001e80];
+}
+
+.btnPurple {
+    @apply bg-[#6958ff] hover:border-[#6958ff] hover:text-[#6958ff];
 }
 
 /* CONVERT */

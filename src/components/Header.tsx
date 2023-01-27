@@ -35,16 +35,16 @@ export default function Header() {
                                 <NavLink to="conversor-cases" className="navItem">Converter Cases</NavLink>
                             </li>
                             <li>
+                                <NavLink to="conversor-keyword" className="navItem">Converter KeyWord</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="estados" className="navItem">Estados</NavLink>
                             </li>
                             <li>
                                 <NavLink to="aspas" className="navItem">Aspas</NavLink>
                             </li>
                             <li>
-                                <NavLink to="contador-letras" className="navItem">Contador de Letras</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="contador-palavras" className="navItem">Contador de Palavras</NavLink>
+                                <NavLink to="contador" className="navItem">Contadores</NavLink>
                             </li>
                             <li>
                                 <NavLink to="Info" className="navItem">Info</NavLink>
@@ -62,13 +62,16 @@ export default function Header() {
                             <NavLink to="conversor-cases" className="navItem" onClick={menuBtnClick}>Converter Cases</NavLink>
                         </li>
                         <li>
+                            <NavLink to="conversor-keyword" className="navItem" onClick={menuBtnClick}>Converter KeyWord</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="estados" className="navItem" onClick={menuBtnClick}>Estados</NavLink>
                         </li>
                         <li>
                             <NavLink to="aspas" className="navItem" onClick={menuBtnClick}>Aspas</NavLink>
                         </li>
                         <li>
-                            <NavLink to="contador" className="navItem" onClick={menuBtnClick}>Contador</NavLink>
+                            <NavLink to="contador" className="navItem" onClick={menuBtnClick}>Contadores</NavLink>
                         </li>
                         <li>
                             <NavLink to="Info" className="navItem" onClick={menuBtnClick}>Info</NavLink>

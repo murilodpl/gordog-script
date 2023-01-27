@@ -1,9 +1,9 @@
 import Home from './pages/Home';
 import Estados from './pages/Estados';
 import Aspas from './pages/Aspas';
-import ContadorLetras from './pages/ContadorLetras';
-import ContadorPalavras from './pages/ContadorPalavras';
+import Contadores from './pages/Contadores';
 import ConvertCases from './pages/ConvertCases';
+import ConvertKeyWord from './pages/ConvertKeyWord';
 import Info from './pages/Info';
 import Parabens from './pages/Parabens';
 
@@ -20,9 +20,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/estados" element={<Estados />} />
           <Route path="/aspas" element={<Aspas />} />
-          <Route path="/contador-letras" element={<ContadorLetras />} />
-          <Route path="/contador-palavras" element={<ContadorPalavras />} />
+          <Route path="/contador" element={<Contadores />} />
           <Route path="/conversor-cases" element={<ConvertCases />} />
+          <Route path="/conversor-keyword" element={<ConvertKeyWord />} />
           <Route path="/info" element={<Info />} />
           <Route path="/parabens" element={<Parabens />} />
           <Route
