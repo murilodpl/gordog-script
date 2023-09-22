@@ -10,6 +10,7 @@
     "watch": "tailwindcss -i ./src/assets/css/style.css -o ./src/assets/css/style.min.css --watch"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",

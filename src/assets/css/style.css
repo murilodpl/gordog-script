@@ -17,7 +17,7 @@ nav {
 }
 
 nav .navItem {
-    @apply mx-3 text-base text-white no-underline transition-all hover:text-g_red focus:text-g_red;
+    @apply mx-2 text-sm text-white no-underline transition-all xl:text-base xl:mx-3 hover:text-g_red focus:text-g_red;
 }
 nav .active {
     @apply text-g_red;

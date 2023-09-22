@@ -47,6 +47,9 @@ export default function Header() {
                                 <NavLink to="contador" className="navItem">Contadores</NavLink>
                             </li>
                             <li>
+                                <NavLink to="remover-caracter" className="navItem">Remover Caracter</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="Info" className="navItem">Info</NavLink>
                             </li>
                         </ul>
@@ -72,6 +75,9 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink to="contador" className="navItem" onClick={menuBtnClick}>Contadores</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="remover-caracter" className="navItem" onClick={menuBtnClick}>Remover Caracter</NavLink>
                         </li>
                         <li>
                             <NavLink to="Info" className="navItem" onClick={menuBtnClick}>Info</NavLink>
