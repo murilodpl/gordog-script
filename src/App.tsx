@@ -10,6 +10,7 @@ import Parabens from './pages/Parabens';
 import Header from './components/Header';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import RemoverCaracter from './components/RemoverCaracter';
+import TextoNaFrente from './pages/TextoNaFrente';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/conversor-cases" element={<ConvertCases />} />
           <Route path="/conversor-keyword" element={<ConvertKeyWord />} />
           <Route path="/remover-caracter" element={<RemoverCaracter />} />
+          <Route path="/texto-na-frente" element={<TextoNaFrente />} />
           <Route path="/info" element={<Info />} />
           <Route path="/parabens" element={<Parabens />} />
           <Route

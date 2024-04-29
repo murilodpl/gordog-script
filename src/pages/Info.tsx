@@ -1,8 +1,29 @@
+import { NavLink } from "react-router-dom";
+
 export default function Info() {
     return (
         <div className="container info">
             <h1>Informações Úteis:</h1>
             <h2>Sempre confirme se o que foi processado está correto, pode acontecer de haver algum caractere diferente do normal no meio do texto que acaba passando por despercebido pelo código. <span>(Apenas uma olhada por cima basta)</span></h2>
+
+
+            <div className='lista'>
+                <p>Funções antigas:</p>
+                <ul>
+                    <li>
+                        <NavLink to="/conversor-keyword" className="navItem">Converter KeyWord</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/estados" className="navItem">Estados</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/aspas" className="navItem">Aspas</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contador" className="navItem">Contadores</NavLink>
+                    </li>
+                </ul>
+            </div>
 
             <div className='lista'>
                 <p>Como funciona o script de conversão?</p>
