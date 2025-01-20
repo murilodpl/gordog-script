@@ -35,6 +35,9 @@ export default function Header() {
                                 <NavLink to="conversor-cases" className="navItem">Converter Cases</NavLink>
                             </li>
                             <li>
+                                <NavLink to="telefone" className="navItem">Telefone</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="remover-caracter" className="navItem">Remover Caracter</NavLink>
                             </li>
                             <li>
@@ -54,6 +57,9 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink to="conversor-cases" className="navItem" onClick={menuBtnClick}>Converter Cases</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="telefone" className="navItem" onClick={menuBtnClick}>Telefone</NavLink>
                         </li>
                         <li>
                             <NavLink to="remover-caracter" className="navItem" onClick={menuBtnClick}>Remover Caracter</NavLink>

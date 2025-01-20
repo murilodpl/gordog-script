@@ -11,6 +11,7 @@ import Header from './components/Header';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import RemoverCaracter from './components/RemoverCaracter';
 import TextoNaFrente from './pages/TextoNaFrente';
+import SimplificadorTelefone from './pages/SimplificadorTelefone';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/estados" element={<Estados />} />
           <Route path="/aspas" element={<Aspas />} />
           <Route path="/contador" element={<Contadores />} />
+          <Route path="/telefone" element={<SimplificadorTelefone />} />
           <Route path="/conversor-cases" element={<ConvertCases />} />
           <Route path="/conversor-keyword" element={<ConvertKeyWord />} />
           <Route path="/remover-caracter" element={<RemoverCaracter />} />
