@@ -4,6 +4,8 @@ import Aspas from './pages/Aspas';
 import Contadores from './pages/Contadores';
 import ConvertCases from './pages/ConvertCases';
 import ConvertKeyWord from './pages/ConvertKeyWord';
+import Magic from './pages/Magic';
+import MagicRemoverCartasLista from './pages/MagicRemoverCartasLista';
 import Info from './pages/Info';
 import Parabens from './pages/Parabens';
 
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/conversor-keyword" element={<ConvertKeyWord />} />
           <Route path="/remover-caracter" element={<RemoverCaracter />} />
           <Route path="/texto-na-frente" element={<TextoNaFrente />} />
+          <Route path="/magic" element={<Magic />} />
+          <Route path="/remover-cartas-lista" element={<MagicRemoverCartasLista />} />
           <Route path="/info" element={<Info />} />
           <Route path="/parabens" element={<Parabens />} />
           <Route

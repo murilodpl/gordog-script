@@ -44,6 +44,9 @@ export default function Header() {
                                 <NavLink to="texto-na-frente" className="navItem">Texto na Frente</NavLink>
                             </li>
                             <li>
+                                <NavLink to="Magic" className="navItem">Magic</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="Info" className="navItem">Info</NavLink>
                             </li>
                         </ul>
@@ -66,6 +69,9 @@ export default function Header() {
                         </li>
                         <li>
                             <NavLink to="texto-na-frente" className="navItem" onClick={menuBtnClick}>Texto na Frente</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="Magic" className="navItem" onClick={menuBtnClick}>Magic</NavLink>
                         </li>
                         <li>
                             <NavLink to="Info" className="navItem" onClick={menuBtnClick}>Info</NavLink>
